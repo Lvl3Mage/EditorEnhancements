@@ -1,0 +1,19 @@
+﻿{
+  "name": "com.lvl3mage.com.lvl3mage.editor-enhancements",
+  "version": "1.0.0",
+  "displayName": "Editor Enhancements",
+  "description": "A collection of useful general-puropose Unity attributes and cusom editors.",
+  "unity": "2021.3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lvl3mage/EditorEnhancements.git"
+  },
+  "keywords": [
+  ],
+  "author": "lvl3mage",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lvl3mage/EditorEnhancements/issues"
+  },
+  "homepage": "https://github.com/lvl3mage/EditorEnhancements#readme"
+}

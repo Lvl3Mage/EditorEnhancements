@@ -1,0 +1,14 @@
+﻿{
+    "name": "Lvl3Mage.EditorEnhancements.Runtime",
+    "rootNamespace": "Lvl3Mage.EditorEnhancements",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
