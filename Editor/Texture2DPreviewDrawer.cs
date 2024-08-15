@@ -20,31 +20,28 @@ namespace Lvl3Mage.EditorEnhancements.Editor
 					return;
 				}
 				var method = type.GetMethod(attr.updateMethodName, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-				
+
 				var parentObj = EditorUtils.GetParentObject(parentProp);
-				// object obj = parentProp.serializedObject.FindProperty(parentProp.propertyPath);
 				method.Invoke(parentObj, null);
 			}
 			
 			
-			float offset = position.y;
-			
 			
 			//Property
 			if (!attr.hideProperty){
-				var propRect = EditorUtils.PropertyRect(parentProp,position.x, position.width, ref offset);
+				var propRect = EditorUtils.ReservePropertyRect(ref position, parentProp);
 				EditorGUI.PropertyField(propRect, parentProp, new GUIContent(parentProp.displayName), true);
 			}
 
 			
 			//Label / dropdown
 			if (attr.showDropdown){
-				parentProp.isExpanded = EditorGUI.Foldout(EditorUtils.LineRect(position.x, position.width, ref offset), parentProp.isExpanded, attr.labelText);
+				parentProp.isExpanded = EditorGUI.Foldout(EditorUtils.ReserveLineRect(ref position), parentProp.isExpanded, attr.labelText);
 				EditorGUI.indentLevel += 1;
 			}
 			else{
 				if (attr.labelText != ""){
-					EditorGUI.LabelField(EditorUtils.LineRect(position.x, position.width, ref offset), attr.labelText);
+					EditorGUI.LabelField(EditorUtils.ReserveLineRect(ref position), attr.labelText);
 				}
 			}
 			
@@ -56,9 +53,9 @@ namespace Lvl3Mage.EditorEnhancements.Editor
 					float previewHeight = previewWidth * texture.height / texture.width;
 					Rect textureRect = new Rect(
 						EditorGUI.IndentedRect( // putting the whole indented rect breaks the texture, so it is only used for the x value
-							new Rect(position.x, offset, previewWidth,
+							new Rect(position.x, position.y, previewWidth,
 								previewHeight)
-						).x, offset, previewWidth, previewHeight);
+						).x, position.y, previewWidth, previewHeight);
 					
 					EditorGUI.DrawPreviewTexture(textureRect,texture);
 				}

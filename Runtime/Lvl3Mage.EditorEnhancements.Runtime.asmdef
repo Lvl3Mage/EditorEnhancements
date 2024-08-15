@@ -1,7 +1,9 @@
-﻿{
+{
     "name": "Lvl3Mage.EditorEnhancements.Runtime",
     "rootNamespace": "Lvl3Mage.EditorEnhancements",
-    "references": [],
+    "references": [
+        "GUID:7f49a689c9bd41359de22fe807008dac"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
