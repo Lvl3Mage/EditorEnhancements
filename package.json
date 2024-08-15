@@ -11,7 +11,7 @@
   "keywords": [
   ],
   "dependencies": {
-    "com.lvl3mage.editor-dev-toolkit": "1.1.0"
+    "com.lvl3mage.editor-dev-toolkit": "[1.1.0,)"
   },
   "author": "lvl3mage",
   "license": "MIT",
