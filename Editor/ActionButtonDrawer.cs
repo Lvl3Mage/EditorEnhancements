@@ -29,7 +29,7 @@ namespace Lvl3Mage.EditorEnhancements.Editor
 			if (GUI.Button(buttonRect, attr.buttonText, style)){
 				var targetObj = attr.methodSource == SourceType.Field ? EditorUtils.GetPropertyObject(property) : EditorUtils.GetParentObject(property);
 				var type = targetObj.GetType();
-				var method = type.GetMethod(attr.methodName, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+				var method = type.GetMethod(attr.methodName, BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Static);
 				if(method == null){
 					Debug.LogError($"Cannot find method '{attr.methodName}' in type '{type}'");
 					return;

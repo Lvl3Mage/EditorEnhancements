@@ -68,8 +68,8 @@ namespace Lvl3Mage.EditorEnhancements.Runtime
 			if (obj == null){
 				return null;
 			}
-			FieldInfo field = type.GetField(sourceName);
-			PropertyInfo? prop = type.GetProperty(sourceName);
+			FieldInfo? field = type.GetField(sourceName,BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Static);
+			PropertyInfo? prop = type.GetProperty(sourceName, BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Static);
 			
 			if (field == null && prop == null){
 				Debug.LogError($"Could not find field or property with name '{sourceName}' in type '{type}'");
@@ -115,7 +115,7 @@ namespace Lvl3Mage.EditorEnhancements.Runtime
 			if(obj == null){
 				return null;
 			}
-			MethodInfo? method = type.GetMethod(sourceName);
+			MethodInfo? method = type.GetMethod(sourceName, BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Static);
 			if (method == null){
 				Debug.LogError($"Could not find method with name '{sourceName}' in type '{type}'");
 				return null;
