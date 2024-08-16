@@ -43,9 +43,14 @@ namespace Lvl3Mage.EditorEnhancements.Editor
 		string? GetLabel(SerializedProperty property)
 		{
 			ISourceLabeledField attr = attribute as ISourceLabeledField;
-			Type sourceType = attr.LabelSource == SourceType.Field ? fieldInfo.FieldType : fieldInfo.ReflectedType;
+			object propertyObject = EditorUtils.GetPropertyObject(property);
+			
+			// if (property.isArray){
+			// 	
+			// }
+			Type sourceType = attr.LabelSource == SourceType.Field ? propertyObject.GetType() : fieldInfo.ReflectedType;
 			object source = attr.LabelSource == SourceType.Field
-				? property.objectReferenceValue
+				? propertyObject
 				: EditorUtils.GetParentObject(property);
 			return attr.GetLabel(sourceType, source);
 		}
