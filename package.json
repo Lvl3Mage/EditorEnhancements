@@ -1,6 +1,6 @@
 ﻿{
   "name": "com.lvl3mage.editor-enhancements",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "displayName": "Editor Enhancements",
   "description": "A collection of useful general-puropose Unity attributes and cusom editors.",
   "unity": "2021.3",
@@ -11,7 +11,7 @@
   "keywords": [
   ],
   "dependencies": {
-    "com.lvl3mage.editor-dev-toolkit": "1.1.1"
+    "com.lvl3mage.editor-dev-toolkit": "1.1.2"
   },
   "author": "lvl3mage",
   "license": "MIT",
