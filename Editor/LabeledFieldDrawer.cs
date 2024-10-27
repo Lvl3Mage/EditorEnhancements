@@ -48,6 +48,9 @@ namespace Lvl3Mage.EditorEnhancements.Editor
 			// if (property.isArray){
 			// 	
 			// }
+			if (propertyObject == null){
+				return null;
+			}
 			Type sourceType = attr.LabelSource == SourceType.Field ? propertyObject.GetType() : fieldInfo.ReflectedType;
 			object source = attr.LabelSource == SourceType.Field
 				? propertyObject
