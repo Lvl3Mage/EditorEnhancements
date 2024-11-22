@@ -24,9 +24,10 @@ namespace Lvl3Mage.EditorEnhancements.Editor
 
 			string? label = GetLabel(property);
 			if (label != null){
-				GUIContent labelContent = new GUIContent(label);
-				GUIStyle style = new GUIStyle(attr.Style);
-
+				GUIContent labelContent = new(label);
+				GUIStyle style = new(attr.Style){
+					richText = attr.RichText
+				};
 				//Todo this breaks a little when the label wraps
 				layout.Add(rect => EditorGUI.LabelField(rect, labelContent, style),
 					rect => style.CalcHeight(labelContent, rect.width), 0);

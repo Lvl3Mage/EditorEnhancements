@@ -20,6 +20,8 @@ namespace Lvl3Mage.EditorEnhancements.Runtime
 		SourceType LabelSource { get; }
 		string Style { get;}
 
+		bool RichText {get;}
+
 		/// <summary>
 		/// Gets a label for a field.
 		/// </summary>
@@ -43,6 +45,7 @@ namespace Lvl3Mage.EditorEnhancements.Runtime
 		public bool HideProperty { get; }
 		public SourceType LabelSource { get; }
 		public string Style { get; }
+		public bool RichText { get; }
 		readonly string sourceName;
 		readonly string format;
 
@@ -52,10 +55,12 @@ namespace Lvl3Mage.EditorEnhancements.Runtime
 			string format = "{0}",
 			bool underProperty = false,
 			bool hideProperty = false,
-			SourceType sourceType = SourceType.Parent)
+			SourceType sourceType = SourceType.Parent,
+			bool richText = true)
 		{
 			this.sourceName = sourceName;
 			this.format = format;
+			RichText = richText;
 			Style = style;
 			UnderProperty = underProperty;
 			HideProperty = hideProperty;
@@ -91,6 +96,7 @@ namespace Lvl3Mage.EditorEnhancements.Runtime
 		public bool HideProperty { get; }
 		public SourceType LabelSource { get; }
 		public string Style { get; }
+		public bool RichText { get; }
 
 
 		public MethodSourceLabeledField(string sourceName,
@@ -99,11 +105,13 @@ namespace Lvl3Mage.EditorEnhancements.Runtime
 			string format = "{0}",
 			bool underProperty = false,
 			bool hideProperty = false,
-			SourceType sourceType = SourceType.Parent)
+			SourceType sourceType = SourceType.Parent,
+			bool richText = true)
 		{
 			this.sourceName = sourceName;
 			this.parameters = parameters;
 			this.format = format;
+			RichText = richText;
 			Style = style;
 			UnderProperty = underProperty;
 			HideProperty = hideProperty;
