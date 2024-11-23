@@ -31,8 +31,8 @@ var NAVTREE =
       [ "Documentation", "index.html#autotoc_md4", null ],
       [ "Author", "index.html#autotoc_md5", null ]
     ] ],
-    [ "[1.0.0] -", "a00139.html", null ],
-    [ "LICENSE", "a00140.html", null ],
+    [ "[1.0.0] -", "a00178.html", null ],
+    [ "LICENSE", "a00179.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],
@@ -51,7 +51,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"a00035.html"
+"a00044.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
