@@ -6,6 +6,8 @@ using Lvl3Mage.EditorDevToolkit.Runtime;
 
 namespace Lvl3Mage.EditorEnhancements.Runtime
 {
+
+	//Todo: rewrite this to use the new EditorDataSource
 	
 	/// <summary>
 	/// An interface that defines a labeled field.
