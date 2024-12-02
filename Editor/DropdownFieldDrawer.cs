@@ -27,7 +27,7 @@ namespace Lvl3Mage.EditorEnhancements.Editor
 				if(selected == -1){
 					selected = 0;
 				}
-				selected = EditorGUILayout.Popup("My Simple Dropdown", selected, options);
+				selected = EditorGUI.Popup(rect, property.displayName, selected, options);
 
 				if (EditorGUI.EndChangeCheck())
 				{
