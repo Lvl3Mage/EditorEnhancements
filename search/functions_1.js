@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getlabel_0',['GetLabel',['../a00115.html#ae4b848771a9c0cd72697112763d6e004',1,'Lvl3Mage.EditorEnhancements.Runtime.ISourceLabeledField.GetLabel()'],['../a00119.html#ae3f5d1b48218d72d72eb9dfdb17dd682',1,'Lvl3Mage.EditorEnhancements.Runtime.PropertySourceLabeledField.GetLabel()'],['../a00123.html#a8ba27fdf8327d95b9a718e30ff49ca6b',1,'Lvl3Mage.EditorEnhancements.Runtime.MethodSourceLabeledField.GetLabel()']]]
+  ['dropdownfield_0',['DropdownField',['../a00103.html#ab599e56dbc9885aadaedb91bb1e76eb6',1,'Lvl3Mage.EditorEnhancements.Runtime.DropdownField.DropdownField(string[] options)'],['../a00103.html#ab252b7271d600f644dc0cc9b8156c6a7',1,'Lvl3Mage.EditorEnhancements.Runtime.DropdownField.DropdownField(string sourceName)']]]
 ];

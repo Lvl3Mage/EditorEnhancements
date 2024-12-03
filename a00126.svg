@@ -22,8 +22,8 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="a00135.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="0,-0.5 0,-30.5 153,-30.5 153,-0.5 0,-0.5"/>
+<g id="a_node2"><a xlink:href="a00135.html" target="_top" xlink:title="An attribute that can be used to display message boxes in the inspector.">
+<polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 153,-30.5 153,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Lvl3Mage.EditorEnhancements.</text>
 <text text-anchor="middle" x="76.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Runtime.MessageBoxDisplay</text>
 </a>

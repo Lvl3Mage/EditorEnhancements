@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="a00135.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="a00135.html" target="_top" xlink:title="An attribute that can be used to display message boxes in the inspector.">
 <polygon fill="white" stroke="black" points="201,-294.5 201,-324.5 354,-324.5 354,-294.5 201,-294.5"/>
 <text text-anchor="start" x="209" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">Lvl3Mage.EditorEnhancements.</text>
 <text text-anchor="middle" x="277.5" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00">Runtime.MessageBoxDisplay</text>
@@ -123,7 +123,7 @@
 <!-- Node6 -->
 <g id="node10" class="node">
 <title>Node6</title>
-<g id="a_node10"><a xlink:href="a00103.html" target="_top" xlink:title=" ">
+<g id="a_node10"><a xlink:href="a00103.html" target="_top" xlink:title="An attribute that adds a dropdown field to the inspector. Replaces the standard string field with a d...">
 <polygon fill="white" stroke="black" points="201,-49.5 201,-79.5 354,-79.5 354,-49.5 201,-49.5"/>
 <text text-anchor="start" x="209" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">Lvl3Mage.EditorEnhancements.</text>
 <text text-anchor="middle" x="277.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Runtime.DropdownField</text>

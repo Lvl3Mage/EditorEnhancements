@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "[adefgilmptu",
   1: "adefilmpt",
   2: "l",
-  3: "ag",
+  3: "adegm",
   4: "u",
   5: "[el"
 };
