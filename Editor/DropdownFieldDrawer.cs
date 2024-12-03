@@ -27,12 +27,14 @@ namespace Lvl3Mage.EditorEnhancements.Editor
 				}
 				EditorGUI.BeginChangeCheck();
 				int selected = Array.IndexOf(options,property.stringValue);
+				bool found = true;
 				if(selected == -1){
 					selected = 0;
+					found = false;
 				}
 				selected = EditorGUI.Popup(rect, property.displayName, selected, options);
 
-				if (EditorGUI.EndChangeCheck())
+				if (EditorGUI.EndChangeCheck() || !found)
 				{
 					property.stringValue = options[selected];
 				}
