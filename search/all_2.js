@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['dropdownfield_0',['DropdownField',['../a00103.html#ab599e56dbc9885aadaedb91bb1e76eb6',1,'Lvl3Mage.EditorEnhancements.Runtime.DropdownField.DropdownField(string[] options)'],['../a00103.html#ab252b7271d600f644dc0cc9b8156c6a7',1,'Lvl3Mage.EditorEnhancements.Runtime.DropdownField.DropdownField(string sourceName)'],['../a00103.html',1,'Lvl3Mage.EditorEnhancements.Runtime.DropdownField']]],
+  ['dropdownfield_0',['DropdownField',['../a00103.html#a3ded356ae66b34e99106ffa3ea4ba35f',1,'Lvl3Mage.EditorEnhancements.Runtime.DropdownField.DropdownField(string[] options, string emptyValue=&quot;none&quot;)'],['../a00103.html#a3e3c962e3200bdebc73f6b10c7337e67',1,'Lvl3Mage.EditorEnhancements.Runtime.DropdownField.DropdownField(string sourceName, string emptyValue=&quot;none&quot;)'],['../a00103.html',1,'Lvl3Mage.EditorEnhancements.Runtime.DropdownField']]],
   ['dropdownfielddrawer_1',['DropdownFieldDrawer',['../a00071.html',1,'Lvl3Mage::EditorEnhancements::Editor']]]
 ];
