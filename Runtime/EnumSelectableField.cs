@@ -9,10 +9,30 @@ namespace Lvl3Mage.EditorEnhancements.Runtime
 	{
 		public readonly string enumName;
 		public readonly int[] enumTargetValues;
+
+		/// <summary>
+		/// Creates a new EnumSelectableField attribute.
+		/// </summary>
+		/// <param name="enumName">
+		/// The name of the enum field to check.
+		/// </param>
+		/// <param name="enumTargetValue">
+		/// The value of the enum field that will allow the field to be displayed.
+		/// </param>
 		public EnumSelectableField(string enumName, int enumTargetValue){
 			this.enumName = enumName;
 			this.enumTargetValues = new[]{enumTargetValue};
 		}
+
+		/// <summary>
+		/// Creates a new EnumSelectableField attribute.
+		/// </summary>
+		/// <param name="enumName">
+		/// The name of the enum field to check.
+		/// </param>
+		/// <param name="enumTargetValues">
+		/// The values of the enum field that will allow the field to be displayed.
+		/// </param>
 		public EnumSelectableField(string enumName, int[] enumTargetValues){
 			this.enumName = enumName;
 			this.enumTargetValues = enumTargetValues;

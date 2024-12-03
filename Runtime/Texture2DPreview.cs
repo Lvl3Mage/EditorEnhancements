@@ -11,7 +11,8 @@ namespace Lvl3Mage.EditorEnhancements.Runtime
 		public readonly bool hideProperty;
 		public readonly bool showDropdown;
 		public readonly string updateMethodName;
-		
+
+
 		public Texture2DPreview(bool hideProperty, bool showDropdown = false, string text = "Preview:", float width = -1, string updateMethodName = ""){
 			this.hideProperty = hideProperty;
 			this.showDropdown = showDropdown;
