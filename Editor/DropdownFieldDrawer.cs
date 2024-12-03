@@ -22,6 +22,9 @@ namespace Lvl3Mage.EditorEnhancements.Editor
 			DropdownField attr = attribute as DropdownField;
 			layout.Add(rect => {
 				string[] options = attr.GetOptions(EditorUtils.GetParentObject(property));
+				if(options.Length == 0){
+					options = new []{attr.EmptyValue};
+				}
 				EditorGUI.BeginChangeCheck();
 				int selected = Array.IndexOf(options,property.stringValue);
 				if(selected == -1){

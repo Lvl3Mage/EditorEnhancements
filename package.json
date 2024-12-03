@@ -1,6 +1,6 @@
 ﻿{
   "name": "com.lvl3mage.editor-enhancements",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "displayName": "Editor Enhancements",
   "description": "A collection of useful general-purpose Unity attributes and custom editors.",
   "unity": "2021.3",
