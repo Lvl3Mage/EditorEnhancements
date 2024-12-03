@@ -34,7 +34,7 @@ namespace Lvl3Mage.EditorEnhancements.Editor
 					property.stringValue = options[selected];
 				}
 
-			}, EditorGUIUtility.singleLineHeight);
+			}, EditorGUIUtility.singleLineHeight,0,false);
 			return layout;
 		}
 
