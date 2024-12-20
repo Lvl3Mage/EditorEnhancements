@@ -37,7 +37,6 @@ namespace Lvl3Mage.EditorEnhancements.Runtime
 		/// <param name="afterField"></param>
 		/// <param name="methodSource"></param>
 		/// <param name="style"></param>
-		/// <param name="fullWidth"></param>
 		public ActionButton(string buttonText,
 			string methodName,
 			bool hideField = false,

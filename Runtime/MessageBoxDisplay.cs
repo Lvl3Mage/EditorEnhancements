@@ -19,6 +19,10 @@ namespace Lvl3Mage.EditorEnhancements.Runtime
 	}
 
 
+
+	/// <summary>
+	/// A class that provides a simple way tp describe a message box to display in the inspector.
+	/// </summary>
 	public class MessageBox
 	{
 		public MessageBox(string message, Type type)
@@ -38,10 +42,29 @@ namespace Lvl3Mage.EditorEnhancements.Runtime
 		public readonly string Message;
 	}
 
+	/// <summary>
+	/// An attribute that can be used to display message boxes in the inspector.
+	/// </summary>
 	public class MessageBoxDisplay : PropertyAttribute, IMessageBoxDisplay
 	{
 		readonly EditorDataSource<MessageBox[]> messageSource;
 
+
+		/// <summary>
+		/// Creates a new MessageBoxDisplay attribute.
+		/// </summary>
+		/// <param name="messages">
+		/// The messages to display in the inspector.
+		/// </param>
+		/// <param name="types">
+		/// The types of the messages to display in the inspector.
+		/// </param>
+		/// <param name="hideField">
+		/// Whether to hide the field that this attribute is applied to.
+		/// </param>
+		/// <param name="afterField">
+		/// Whether to display the message boxes after the field that this attribute is applied to.
+		/// </param>
 		public MessageBoxDisplay(string[] messages, MessageBox.Type[] types, bool hideField = false, bool afterField = false)
 		{
 			MessageBox[] boxes = new MessageBox[messages.Length];
@@ -52,6 +75,19 @@ namespace Lvl3Mage.EditorEnhancements.Runtime
 			HideField = hideField;
 			AfterField = afterField;
 		}
+
+		/// <summary>
+		/// Creates a new MessageBoxDisplay attribute.
+		/// </summary>
+		/// <param name="sourceName">
+		/// The name of the method to call to get the message boxes to display in the inspector. The method should return a MessageBox array.
+		/// </param>
+		/// <param name="hideField">
+		/// Whether to hide the field that this attribute is applied to.
+		/// </param>
+		/// <param name="afterField">
+		/// Whether to display the message boxes after the field that this attribute is applied to.
+		/// </param>
 		public MessageBoxDisplay(string sourceName, bool hideField = false, bool afterField = false)
 		{
 			messageSource = new EditorDataSource<MessageBox[]>(sourceName);

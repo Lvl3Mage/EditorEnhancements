@@ -5,6 +5,13 @@ using UnityEngine;
 
 namespace Lvl3Mage.EditorEnhancements.Runtime
 {
+
+	/// <summary>
+	/// A class that provides a way to get data from a field, property, or method in the inspector. Also supports raw data as a source.
+	/// </summary>
+	/// <typeparam name="T">
+	/// The type of data to get.
+	/// </typeparam>
 	public class EditorDataSource<T>
 	{
 		enum TargetType
@@ -18,18 +25,41 @@ namespace Lvl3Mage.EditorEnhancements.Runtime
 		readonly string sourceName;
 
 
+		/// <summary>
+		/// Creates a new EditorDataSource with raw data as the source.
+		/// </summary>
+		/// <param name="rawSource">
+		/// The raw data to use as the source.
+		/// </param>
 		public EditorDataSource(T rawSource)
 		{
 			this.rawSource = rawSource;
 			targetType = TargetType.Raw;
 		}
-
+		/// <summary>
+		/// Creates a new EditorDataSource with a field, property, or method as the source.
+		/// </summary>
+		/// <param name="sourceName">
+		/// The name of the field, property, or method to get the data from. The source object must be of type <typeparamref name="T"/>.
+		/// </param>
 		public EditorDataSource(string sourceName)
 		{
 			this.sourceName = sourceName;
 			targetType = TargetType.Source;
 		}
 
+		/// <summary>
+		/// Returns the data from the source.
+		/// </summary>
+		/// <param name="obj">
+		/// The object to get the data from. This object must have the field, property, or method with the name specified in the constructor if the source is not raw data.
+		/// </param>
+		/// <param name="result">
+		/// The data from the source. If the source is not found or the data is not of type <typeparamref name="T"/>, this will be the default value of <typeparamref name="T"/>.
+		/// </param>
+		/// <returns>
+		/// True if the data was successfully retrieved, false otherwise.
+		/// </returns>
 		public bool Get(object obj, out T result)
 		{
 			result = default;

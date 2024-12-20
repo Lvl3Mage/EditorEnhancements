@@ -22,19 +22,24 @@ namespace Lvl3Mage.EditorEnhancements.Editor
 			DropdownField attr = attribute as DropdownField;
 			layout.Add(rect => {
 				string[] options = attr.GetOptions(EditorUtils.GetParentObject(property));
+				if(options.Length == 0){
+					options = new []{attr.EmptyValue};
+				}
 				EditorGUI.BeginChangeCheck();
 				int selected = Array.IndexOf(options,property.stringValue);
+				bool found = true;
 				if(selected == -1){
 					selected = 0;
+					found = false;
 				}
 				selected = EditorGUI.Popup(rect, property.displayName, selected, options);
 
-				if (EditorGUI.EndChangeCheck())
+				if (EditorGUI.EndChangeCheck() || !found)
 				{
 					property.stringValue = options[selected];
 				}
 
-			}, EditorGUIUtility.singleLineHeight);
+			}, EditorGUIUtility.singleLineHeight,0,false);
 			return layout;
 		}
 
