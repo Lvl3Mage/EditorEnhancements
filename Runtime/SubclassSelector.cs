@@ -29,7 +29,7 @@ namespace Lvl3Mage.EditorEnhancements.Runtime
 
 			return types.Append(T)
 				.Except(ExcludedTypes)
-				.Where(t => !t.IsAbstract && !t.IsInterface);
+				.Where(t => !t.IsAbstract && !t.IsInterface && !t.IsSubclassOf(typeof(UnityEngine.Object)));
 		}
 	}
 	public class CustomSubclassSelector : SubclassSelector
