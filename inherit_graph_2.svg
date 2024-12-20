@@ -12,7 +12,7 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="a00107.html" target="_top" xlink:title="A class that provides a way to get data from a field, property, or method in the inspector....">
+<g id="a_node1"><a xlink:href="a00117.html" target="_top" xlink:title="A class that provides a way to get data from a field, property, or method in the inspector....">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 153,-30.5 153,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Lvl3Mage.EditorEnhancements.</text>
 <text text-anchor="middle" x="76.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Runtime.EditorDataSource&lt; T &gt;</text>

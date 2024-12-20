@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['messagebox_0',['MessageBox',['../a00131.html',1,'Lvl3Mage::EditorEnhancements::Runtime']]],
-  ['messageboxdisplay_1',['MessageBoxDisplay',['../a00135.html',1,'Lvl3Mage.EditorEnhancements.Runtime.MessageBoxDisplay'],['../a00135.html#a72d3f73a229035324275ad85e0785fac',1,'Lvl3Mage.EditorEnhancements.Runtime.MessageBoxDisplay.MessageBoxDisplay(string[] messages, MessageBox.Type[] types, bool hideField=false, bool afterField=false)'],['../a00135.html#a606f9b826220718ac2077156ae6084e2',1,'Lvl3Mage.EditorEnhancements.Runtime.MessageBoxDisplay.MessageBoxDisplay(string sourceName, bool hideField=false, bool afterField=false)']]],
-  ['messageboxdisplaydrawer_2',['MessageBoxDisplayDrawer',['../a00083.html',1,'Lvl3Mage::EditorEnhancements::Editor']]],
-  ['methodsourcelabeledfield_3',['MethodSourceLabeledField',['../a00123.html',1,'Lvl3Mage::EditorEnhancements::Runtime']]]
+  ['editor_0',['Editor',['../a00058.html',1,'Lvl3Mage::EditorEnhancements']]],
+  ['editorenhancements_1',['EditorEnhancements',['../a00057.html',1,'Lvl3Mage']]],
+  ['labeledfielddrawer_2',['LabeledFieldDrawer',['../a00085.html',1,'Lvl3Mage::EditorEnhancements::Editor']]],
+  ['license_3',['LICENSE',['../a00215.html',1,'']]],
+  ['lvl3mage_4',['Lvl3Mage',['../a00056.html',1,'']]],
+  ['runtime_5',['Runtime',['../a00059.html',1,'Lvl3Mage::EditorEnhancements']]]
 ];
