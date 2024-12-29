@@ -49,6 +49,7 @@ namespace Lvl3Mage.EditorEnhancements.Editor
 				if (EditorGUI.EndChangeCheck())
 				{
 					property.managedReferenceValue = Activator.CreateInstance(types[selected]);
+					property.serializedObject.ApplyModifiedProperties();
 				}
 
 			}, EditorGUIUtility.singleLineHeight);
