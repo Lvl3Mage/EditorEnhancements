@@ -35,7 +35,10 @@ namespace Lvl3Mage.EditorEnhancements.Editor
 					? $"No classes implement the interface {type.Name}"
 					: $"No subclasses found for {type.Name}");
 			}
-			property.managedReferenceValue ??= Activator.CreateInstance(types[0]);
+			if (property.managedReferenceValue == null){
+				property.managedReferenceValue = Activator.CreateInstance(types[0]);
+				property.serializedObject.ApplyModifiedProperties();
+			}
 			string[] options = types.Select(subclass => subclass.Name).ToArray();
 			layout.Add(rect => {
 				EditorGUI.BeginChangeCheck();
