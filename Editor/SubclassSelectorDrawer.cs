@@ -56,8 +56,9 @@ namespace Lvl3Mage.EditorEnhancements.Editor
 				}
 
 			}, EditorGUIUtility.singleLineHeight);
+
 			layout.Add(rect => EditorGUI.PropertyField(rect, property, new GUIContent(property.displayName), true),
-				EditorGUI.GetPropertyHeight(property), 0);
+				(_)=> property.managedReferenceValue == null ? EditorGUIUtility.singleLineHeight : EditorGUI.GetPropertyHeight(property), 0);
 
 			return layout;
 		}
